@@ -4,8 +4,11 @@ pipeline {
 
         stage('build'){
             steps {
-                sh returnStdout: true, script: 'python --version'
-                echo 'Hello World! This is build stage message'
+                PYTHON_VERSION = sh (
+                    returnStdout: true, 
+                    script: 'python --version'
+                ).trim()
+                echo 'Hello World! ${PYTHON_VERSION}'
             }
         }
         stage('test'){
