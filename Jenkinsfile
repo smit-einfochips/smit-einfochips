@@ -4,7 +4,7 @@ pipeline {
 
         stage('build'){
             steps {
-                sh 'python --version'
+                sh returnStdout: true, script: 'python --version'
                 echo 'Hello World! This is build stage message'
             }
         }
