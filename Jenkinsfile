@@ -15,5 +15,6 @@ pipeline {
             steps {
                 echo 'This is deploy stage message'
             }
+        }
     }
 }
