@@ -1,10 +1,8 @@
-pipeline {
-    agent { docker { image 'python:3.10.1-alpine' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
-            }
+/* Requires the Docker Pipeline plugin */
+node('docker') {
+    stage('Build') {
+        docker.image('ruby:3.0.3-alpine').inside {
+            sh 'ruby --version'
         }
     }
 }
