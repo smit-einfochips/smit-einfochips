@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Example'){
             steps {
-                echo 'Hello World! P'
+                echo 'Hello World! with multibranch webhook'
             }
         }
     }
