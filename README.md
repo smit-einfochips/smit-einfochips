@@ -1,10 +1,4 @@
 # smit-einfochips 
 
-thanks
-
-change
-
-git-webhook
-
-change 2
+This is dev branch
 
