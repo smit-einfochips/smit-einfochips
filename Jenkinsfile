@@ -3,13 +3,17 @@ pipeline {
     stages {
         stage('build'){
             steps {
-                echo 'Hello World! with multibranch  webhook test '
+                echo 'Hello World! This is build stage message'
             }
         }
         stage('test'){
             steps {
-                echo 'test code '
+                echo 'This is test stage message'
             }
         }
+        stage('deploy'){
+            steps {
+                echo 'This is deploy stage message'
+            }
     }
 }
