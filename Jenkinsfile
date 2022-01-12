@@ -1,12 +1,11 @@
 pipeline {
     agent {
-        dockerfile true
+        dockerfile false
     }
     stages {
         stage('Example'){
             steps {
                 echo 'Hello World!'
-                sh 'echo myCustomeEnvVar = $myCustomeEnvVar'
             }
         }
     }
