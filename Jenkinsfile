@@ -9,7 +9,7 @@ pipeline {
                 // PYTHON_VERSION = PYTHON_VERSION.trim();
                 sh "chmod +x -R ${env.WORKSPACE}"
 
-                sh './script_WP.sh'
+                sh 'script_WP.sh'
 
                
                 echo 'Hello World! '
