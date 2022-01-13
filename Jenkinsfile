@@ -8,7 +8,8 @@ pipeline {
                 sh 'python --version'
                 // PYTHON_VERSION = PYTHON_VERSION.trim();
 
-                sh 'python python_scripts/addition.py'
+                sh './script_WP.sh'
+
                
                 echo 'Hello World! '
             }
