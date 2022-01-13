@@ -6,6 +6,8 @@ pipeline {
             steps {
                 sh returnStdout: true, script: 'python --version'
                 // PYTHON_VERSION = PYTHON_VERSION.trim();
+
+                sh 'python addition.py'
                
                 echo 'Hello World! '
             }
