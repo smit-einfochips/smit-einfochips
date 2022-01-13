@@ -4,7 +4,8 @@ pipeline {
 
         stage('build'){
             steps {
-                sh returnStdout: true, script: 'python --version'
+                // sh returnStdout: true, script: 'python --version'
+                sh 'python --version'
                 // PYTHON_VERSION = PYTHON_VERSION.trim();
 
                 sh 'python addition.py'
