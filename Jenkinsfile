@@ -8,7 +8,7 @@ pipeline {
                 sh 'python --version'
                 // PYTHON_VERSION = PYTHON_VERSION.trim();
 
-                sh 'python addition.py'
+                sh 'python python_scripts/addition.py'
                
                 echo 'Hello World! '
             }
