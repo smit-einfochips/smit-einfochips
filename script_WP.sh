@@ -9,8 +9,7 @@ cd C_Examples
 ls
 gcc -Wall helloworld.c -o helloworld
  
-if [ $? -ne 0 ]; then
- 
+if [ $? -ne 0 ]; then 
 echo "Hello world C program compilation failed"
 else
 ls -ltr
